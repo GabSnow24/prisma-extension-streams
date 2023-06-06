@@ -1,6 +1,6 @@
 {
   "name": "prisma-extension-streams",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,10 +17,10 @@
     "url": "git+https://github.com/GabSnow24/prisma-extension-streams.git"
   },
   "keywords": [
-    "promise",
-    "async",
-    "UnhandledPromiseRejectionWarning",
-    "PromiseRejectionHandledWarning"
+    "stream",
+    "streams",
+    "prisma",
+    "prisma-stream"
   ],
   "author": "Gabriel Queiroz <gqueiroz_photo@hotmail.com> (https://www.linkedin.com/in/gabriel-queiroz-3xp/)",
   "bugs": {

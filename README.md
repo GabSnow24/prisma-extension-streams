@@ -1,6 +1,6 @@
 # NPM Module for Streams in Prisma ORM 
 
-Prisma Streams is a typescript first module that will transform SQL data from queries in streams, in order to improve performance in larger datasets. This module will be configured as a (Prisma ORM)[https://www.prisma.io] (client extension)[https://www.prisma.io/docs/concepts/components/prisma-client/client-extensions/shared-extensions] that will return (Node Streams)[https://nodejs.org/api/stream.html] from Prisma queries.
+Prisma Streams is a typescript first module that will transform SQL data from queries in streams, in order to improve performance in larger datasets. This module will be configured as a [Prisma ORM](https://www.prisma.io) [client extension](https://www.prisma.io/docs/concepts/components/prisma-client/client-extensions/shared-extensions) that will return [Node Streams](https://nodejs.org/api/stream.html) from Prisma queries.
 
 
 It's recomendable to take a look on Prisma install and configuration before using this module.
