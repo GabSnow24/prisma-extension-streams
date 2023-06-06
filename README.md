@@ -22,7 +22,7 @@ To use extension:
     generator client {
     provider        = "prisma-client-js"
     previewFeatures = ["clientExtensions"] //TURN-ON
-}
+    }
     ```
 
 1. Import Prisma Streams module inside your project
