@@ -46,7 +46,7 @@ To use extension:
     for await (const entity of stream) {
       console.log(entity.id)
     }
-  }
+    }
     ```
 
 ## GitHub
