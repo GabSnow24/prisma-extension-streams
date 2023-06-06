@@ -49,5 +49,5 @@ To use extension:
 
 ## GitHub
 
-If you liked this project, dont hesitate to star that project on our GitHub. Happy Code c:
+If you liked this project, dont hesitate to star that project on our [GitHub](https://github.com/GabSnow24/prisma-extension-streams). Happy Code c:
 
