@@ -17,6 +17,14 @@ To use extension:
     ```
     npm install prisma-extension-streams
     ```
+1. Dont forget to enable extension on your client generator on schema.prisma.
+    ```
+    generator client {
+    provider        = "prisma-client-js"
+    previewFeatures = ["clientExtensions"] //TURN-ON
+}
+    ```
+
 1. Import Prisma Streams module inside your project
     ```
     import { PrismaStreams } from 'prisma-extension-streams';
