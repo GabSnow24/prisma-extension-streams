@@ -14,11 +14,14 @@
     "declaration": true,
     "moduleResolution": "node",
     "noImplicitAny": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "incremental": true,
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
     "outDir": "./lib/esm",
   },
-  "include": [
-    "./src"
-  ]
+  "include": ["src/**/*"],
+   "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
 }

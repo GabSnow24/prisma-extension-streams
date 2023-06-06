@@ -1,17 +1,19 @@
 {
   "name": "prisma-extension-streams",
-  "version": "1.0.3",
+  "version": "1.0.15",
+  "engines": {
+    "node": ">=16"
+  },
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
-    "prepublishOnly": "npm run tsc"
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
+    "clean": "rimraf ./lib",
+    "prepublishOnly": "npm run build"
   },
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
-  "files": [
-    "lib/"
-  ],
+  "types": "./lib/cjs/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GabSnow24/prisma-extension-streams.git"
@@ -33,7 +35,8 @@
     "prisma": "^4.15.0",
     "typescript": "^5.1.3"
   },
-  "dependencies": {
-    "@prisma/client": "^4.15.0"
+  "peerDependencies": {
+    "@prisma/client": "^4.15.0",
+    "prisma": "^4.15.0"
   }
 }

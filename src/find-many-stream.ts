@@ -1,5 +1,5 @@
 import { Prisma } from "@prisma/client";
-import { Readable } from "../core/Readable.js";
+import { Readable } from "./Readable.js";
 
 export interface IPrismaFindManyOptions {
     searchStatement: any
@@ -27,11 +27,12 @@ export class PrismaFindManyReadableStream<T, A> extends Readable<Prisma.Result<T
 
     public override async _read() {
         try {
+            const { batchSize, ...otherArgs} = this.args
             const items: Prisma.Result<T, A, "findMany"> = await (this as any).prismaClient.findMany({
                 take: this.readableHighWaterMark,
                 skip: this.cursorId ? 1 : 0,
                 cursor: this.cursorId ? { id: this.cursorId } : undefined,
-                ...this.args
+                ...otherArgs
             });
             for (const item of items) {
                 //@ts-ignore

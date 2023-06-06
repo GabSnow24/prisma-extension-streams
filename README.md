@@ -40,6 +40,8 @@ To use extension:
     const prismaClient = new PrismaClient().$extends(PrismaStreams)
 
     async findAll() {
+    //TS Ignore is necessary because this is a beta feature on Prisma and type-safety is being improved.
+    //@ts-ignore
     const stream = prismaClient.product.findManyStream()
     for await (const entity of stream) {
       console.log(entity.id)

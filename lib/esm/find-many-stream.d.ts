@@ -1,5 +1,5 @@
 import { Prisma } from "@prisma/client";
-import { Readable } from "../core/Readable.js";
+import { Readable } from "./Readable.js";
 export interface IPrismaFindManyOptions {
     searchStatement: any;
 }
